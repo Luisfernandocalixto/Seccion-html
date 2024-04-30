@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>FC Barcelona</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="preferencias.html">Preferencias</a> </li>
+                <li> <a href="audiovisuales.html">Audiovisuales</a> </li>
+                <li> <a class="active" href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="contenedor-formulario">
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" minlength="3" required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" minlength="3" required>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" placeholder="Escribe tu email" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="México">México</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Perú">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Paraguay">Paraguay</option>
+            </select>
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" name="" id="motivo" name="motivo"><i>Soy fan</i>
+            <input type="radio" name="" id="motivo" name="motivo"><i>Quiero una Jersey</i>
+            <input type="radio" name="" id="motivo" name="motivo"><i>Comerciales</i>
+            <input type="radio" name="" id="motivo" name="motivo"><i>Reclamos</i>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
